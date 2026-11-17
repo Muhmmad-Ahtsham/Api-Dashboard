@@ -1,0 +1,60 @@
+:root {
+  --primary: #0f766e; --primary-dark: #134e4a; --danger: #b91c1c; --warn: #b45309;
+  --ok: #15803d; --bg: #f1f5f9; --surface: #fff; --text: #0f172a; --muted: #64748b;
+  --border: #cbd5e1; --space: 1rem; --radius: 8px;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
+.app-header { background: var(--primary-dark); color: #fff; padding: 1.25rem var(--space); text-align: center; }
+.app-header h1 { margin: 0; font-size: 1.6rem; }
+.app-header p { margin: .25rem 0 0; opacity: .85; font-size: .9rem; }
+.container { max-width: 1100px; margin: 0 auto; padding: var(--space); display: grid; gap: var(--space); }
+.panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--space); }
+
+.cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space); }
+.card { background: var(--surface); border: 1px solid var(--border); border-left: 5px solid var(--primary); border-radius: var(--radius); padding: var(--space); display: flex; flex-direction: column; }
+.card span { font-size: 1.8rem; font-weight: 700; color: var(--primary); }
+.card small { color: var(--muted); }
+
+.toolbar { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }
+.toolbar + .toolbar { margin-top: .6rem; }
+.toolbar input[type="search"] { flex: 2 1 220px; }
+.toolbar select { flex: 1 1 140px; }
+input[type="search"], select { padding: .5rem .7rem; border: 1px solid var(--border); border-radius: 6px; font: inherit; background: #fff; }
+input:focus, select:focus, .btn:focus-visible { outline: 3px solid #5eead4; border-color: var(--primary); }
+fieldset.method { display: flex; gap: 1rem; border: 1px solid var(--border); border-radius: 6px; padding: .3rem .8rem; margin: 0; }
+fieldset.method legend { font-size: .75rem; color: var(--muted); padding: 0 .3rem; }
+.test-tools { font-size: .85rem; color: var(--muted); gap: 1.2rem; }
+.meta { color: var(--muted); font-size: .85rem; margin-left: auto; }
+
+.btn { padding: .5rem .9rem; border: 1px solid var(--border); border-radius: 6px; background: #fff; font: inherit; cursor: pointer; }
+.btn:hover:not(:disabled) { background: #e2e8f0; }
+.btn:disabled { opacity: .45; cursor: not-allowed; }
+.btn.primary { background: var(--primary); border-color: var(--primary); color: #fff; }
+.btn.primary:hover { background: var(--primary-dark); }
+
+/* States */
+.status { padding: 1.5rem; text-align: center; border-radius: var(--radius); border: 1px solid var(--border); background: var(--surface); }
+.status.error { border-color: var(--danger); color: var(--danger); background: #fef2f2; }
+.status.empty { color: var(--muted); }
+.spinner { display: inline-block; width: 1.4rem; height: 1.4rem; border: 3px solid var(--border); border-top-color: var(--primary); border-radius: 50%; animation: spin .8s linear infinite; vertical-align: middle; margin-right: .5rem; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Table */
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; min-width: 760px; }
+th, td { padding: .6rem .7rem; text-align: left; border-bottom: 1px solid var(--border); }
+thead th { background: #e2e8f0; font-size: .85rem; }
+tbody tr:hover { background: #f8fafc; }
+.badge { padding: .15rem .6rem; border-radius: 999px; font-size: .78rem; font-weight: 600; }
+.badge.Open { background: #dcfce7; color: var(--ok); }
+.badge.Full { background: #fef3c7; color: var(--warn); }
+.badge.Closed { background: #fee2e2; color: var(--danger); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+.pagination { display: flex; flex-wrap: wrap; gap: .35rem; justify-content: center; align-items: center; margin-top: var(--space); }
+.pagination .btn { padding: .3rem .7rem; }
+.pagination .btn.active { background: var(--primary); border-color: var(--primary); color: #fff; }
+.pagination .info { color: var(--muted); font-size: .85rem; margin: 0 .5rem; }
+
+@media (max-width: 900px) { .cards { grid-template-columns: repeat(2, 1fr); } .meta { margin-left: 0; } }

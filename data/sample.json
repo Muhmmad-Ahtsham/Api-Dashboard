@@ -1,0 +1,251 @@
+{
+  "meta": {
+    "title": "Course Catalog",
+    "source": "Lab 8 sample data",
+    "total": 22
+  },
+  "courses": [
+    {
+      "id": 1,
+      "code": "SE-101",
+      "title": "Programming Fundamentals",
+      "instructor": "Dr. Sara Khan",
+      "department": "Software Engineering",
+      "credits": 4,
+      "status": "Open",
+      "enrolled": 42,
+      "capacity": 50
+    },
+    {
+      "id": 2,
+      "code": "SE-201",
+      "title": "Data Structures",
+      "instructor": "Mr. Hamza Ali",
+      "department": "Software Engineering",
+      "credits": 4,
+      "status": "Full",
+      "enrolled": 45,
+      "capacity": 45
+    },
+    {
+      "id": 3,
+      "code": "SE-301",
+      "title": "Software Requirements",
+      "instructor": "Dr. Imran Shah",
+      "department": "Software Engineering",
+      "credits": 3,
+      "status": "Open",
+      "enrolled": 30,
+      "capacity": 45
+    },
+    {
+      "id": 4,
+      "code": "SE-302",
+      "title": "Software Design",
+      "instructor": "Ms. Ayesha Noor",
+      "department": "Software Engineering",
+      "credits": 3,
+      "status": "Open",
+      "enrolled": 28,
+      "capacity": 40
+    },
+    {
+      "id": 5,
+      "code": "SE-401",
+      "title": "Software Testing",
+      "instructor": "Mr. Bilal Memon",
+      "department": "Software Engineering",
+      "credits": 3,
+      "status": "Closed",
+      "enrolled": 35,
+      "capacity": 35
+    },
+    {
+      "id": 6,
+      "code": "SE-402",
+      "title": "DevOps Basics",
+      "instructor": "Dr. Sara Khan",
+      "department": "Software Engineering",
+      "credits": 3,
+      "status": "Open",
+      "enrolled": 20,
+      "capacity": 40
+    },
+    {
+      "id": 7,
+      "code": "SE-410",
+      "title": "Web Technologies",
+      "instructor": "Mr. Rafique Bhutto",
+      "department": "Software Engineering",
+      "credits": 4,
+      "status": "Open",
+      "enrolled": 38,
+      "capacity": 45
+    },
+    {
+      "id": 8,
+      "code": "SE-420",
+      "title": "Mobile App Development",
+      "instructor": "Ms. Ayesha Noor",
+      "department": "Software Engineering",
+      "credits": 3,
+      "status": "Full",
+      "enrolled": 40,
+      "capacity": 40
+    },
+    {
+      "id": 9,
+      "code": "IT-101",
+      "title": "Introduction to IT",
+      "instructor": "Mr. Kamran Rind",
+      "department": "Information Technology",
+      "credits": 3,
+      "status": "Open",
+      "enrolled": 44,
+      "capacity": 60
+    },
+    {
+      "id": 10,
+      "code": "IT-210",
+      "title": "Computer Networks",
+      "instructor": "Dr. Zahid Jatoi",
+      "department": "Information Technology",
+      "credits": 4,
+      "status": "Open",
+      "enrolled": 36,
+      "capacity": 50
+    },
+    {
+      "id": 11,
+      "code": "IT-220",
+      "title": "Operating Systems",
+      "instructor": "Dr. Imran Shah",
+      "department": "Information Technology",
+      "credits": 4,
+      "status": "Full",
+      "enrolled": 50,
+      "capacity": 50
+    },
+    {
+      "id": 12,
+      "code": "IT-305",
+      "title": "Database Systems",
+      "instructor": "Ms. Farah Soomro",
+      "department": "Information Technology",
+      "credits": 4,
+      "status": "Open",
+      "enrolled": 41,
+      "capacity": 50
+    },
+    {
+      "id": 13,
+      "code": "IT-310",
+      "title": "Network Security",
+      "instructor": "Dr. Zahid Jatoi",
+      "department": "Information Technology",
+      "credits": 3,
+      "status": "Closed",
+      "enrolled": 30,
+      "capacity": 30
+    },
+    {
+      "id": 14,
+      "code": "IT-320",
+      "title": "Cloud Computing",
+      "instructor": "Mr. Kamran Rind",
+      "department": "Information Technology",
+      "credits": 3,
+      "status": "Open",
+      "enrolled": 25,
+      "capacity": 45
+    },
+    {
+      "id": 15,
+      "code": "IT-405",
+      "title": "System Administration",
+      "instructor": "Mr. Bilal Memon",
+      "department": "Information Technology",
+      "credits": 3,
+      "status": "Open",
+      "enrolled": 22,
+      "capacity": 40
+    },
+    {
+      "id": 16,
+      "code": "IT-415",
+      "title": "IT Project Management",
+      "instructor": "Ms. Farah Soomro",
+      "department": "Information Technology",
+      "credits": 3,
+      "status": "Open",
+      "enrolled": 33,
+      "capacity": 40
+    },
+    {
+      "id": 17,
+      "code": "DS-101",
+      "title": "Statistics for Data Science",
+      "instructor": "Dr. Nida Qureshi",
+      "department": "Data Science",
+      "credits": 3,
+      "status": "Open",
+      "enrolled": 47,
+      "capacity": 60
+    },
+    {
+      "id": 18,
+      "code": "DS-210",
+      "title": "Python for Data Analysis",
+      "instructor": "Mr. Asif Mirani",
+      "department": "Data Science",
+      "credits": 4,
+      "status": "Full",
+      "enrolled": 40,
+      "capacity": 40
+    },
+    {
+      "id": 19,
+      "code": "DS-301",
+      "title": "Machine Learning",
+      "instructor": "Dr. Nida Qureshi",
+      "department": "Data Science",
+      "credits": 4,
+      "status": "Open",
+      "enrolled": 34,
+      "capacity": 40
+    },
+    {
+      "id": 20,
+      "code": "DS-310",
+      "title": "Data Visualization",
+      "instructor": "Ms. Mehwish Lashari",
+      "department": "Data Science",
+      "credits": 3,
+      "status": "Open",
+      "enrolled": 27,
+      "capacity": 40
+    },
+    {
+      "id": 21,
+      "code": "DS-405",
+      "title": "Big Data Analytics",
+      "instructor": "Mr. Asif Mirani",
+      "department": "Data Science",
+      "credits": 3,
+      "status": "Closed",
+      "enrolled": 25,
+      "capacity": 25
+    },
+    {
+      "id": 22,
+      "code": "DS-415",
+      "title": "Deep Learning",
+      "instructor": "Dr. Nida Qureshi",
+      "department": "Data Science",
+      "credits": 3,
+      "status": "Open",
+      "enrolled": 18,
+      "capacity": 30
+    }
+  ]
+}

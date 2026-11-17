@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>API Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>API Dashboard</h1>
+  </header>
+
+  <main class="container">
+    <!-- KPI cards -->
+    <section class="cards" aria-label="Summary">
+      <div class="card"><span id="kpiTotal">0</span><small>Total Courses</small></div>
+      <div class="card"><span id="kpiShown">0</span><small>Matching Filters</small></div>
+      <div class="card"><span id="kpiDepts">0</span><small>Departments</small></div>
+      <div class="card"><span id="kpiEnrolled">0</span><small>Total Enrolled</small></div>
+    </section>
+
+    <!-- Request controls -->
+    <section class="panel" aria-label="Request controls">
+      <div class="toolbar">
+        <fieldset class="method">
+          <legend>Load data using</legend>
+          <label><input type="radio" name="method" value="fetch" checked> Fetch API</label>
+          <label><input type="radio" name="method" value="ajax"> jQuery AJAX</label>
+        </fieldset>
+        <button type="button" class="btn primary" id="refreshBtn">&#8635; Refresh</button>
+        <span class="meta" id="requestInfo">No request made yet.</span>
+      </div>
+      <div class="toolbar test-tools">
+        <label><input type="checkbox" id="slowToggle"> Simulate slow network (see loading state)</label>
+        <label><input type="checkbox" id="errorToggle"> Request a missing file (see error state)</label>
+      </div>
+    </section>
+
+    <!-- Search / filter / page size -->
+    <section class="panel" aria-label="Search and filter">
+      <div class="toolbar">
+        <input id="searchInput" type="search" placeholder="Search code, course or instructor..." aria-label="Search">
+        <select id="deptFilter" aria-label="Filter by department"><option value="">All departments</option></select>
+        <select id="statusFilter" aria-label="Filter by status">
+          <option value="">All statuses</option>
+          <option>Open</option><option>Full</option><option>Closed</option>
+        </select>
+        <select id="pageSize" aria-label="Rows per page">
+          <option value="5">5 per page</option>
+          <option value="10">10 per page</option>
+        </select>
+        <button type="button" class="btn" id="clearBtn">Clear</button>
+      </div>
+    </section>
+
+    <!-- Loading / error / empty states -->
+    <div id="statusBox" class="status" role="status" aria-live="polite" hidden></div>
+
+    <!-- Data table -->
+    <section class="panel table-wrap" id="tablePanel" aria-label="Course data" hidden>
+      <table>
+        <caption class="sr-only">Course catalog loaded from JSON</caption>
+        <thead>
+          <tr><th>Code</th><th>Course</th><th>Instructor</th><th>Department</th><th>Credits</th><th>Enrolled</th><th>Status</th></tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+      <nav class="pagination" id="pagination" aria-label="Pagination"></nav>
+    </section>
+  </main>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
